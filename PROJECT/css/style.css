@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+/* ----- 全体のレイアウト ----- */
+
+body {
+    background-color: #ffe;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    background-color: #085;
+    padding: 10px 10px 10px 30px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    padding: 0 0 0 10px;
+    margin: 30px 0;
+    border-left: 8px solid #45a;
+}
+
+h3,p,span,label,input,th,td,select {
+    color: #333;
+}
+
+
+
+/* ----- Webサイト一覧のレイアウト ----- */
+
+#Website div {
+    display: flex;
+}
+
+#Website a{
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    background-color: #cea;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin: 10px;
+    /*親要素がコンテナ、子要素がアイテムになる。*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Website a:hover {
+    opacity: 0.6;
+}
+
+
+
+/* ----- 時間割のレイアウト ----- */
+
+#timetable p {
+    margin: 0 0 0 10px;
+}
+
+.container {
+    display: flex;
+}
+
+#timetable table {
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 20px 10px 10px;
+    box-shadow: 2px 2px 4px #ddd;
+}
+
+#timetable .period {
+    font-size: 16px;
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#timetable .classbox-td {
+    font-size: 16px;
+    width: 120px;
+    border: 1px solid #ddd;
+}
+
+#timetable .classbox-td:hover {
+    background-color: #ff9;
+}
+
+/* JS */
+.classbox-td.active {
+    background-color: #fc5;
+}
+
+#subject-input {
+    margin: 30px 10px;
+}
+
+#subject-input input {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+#subject-input p {
+    font-size: 16px;
+    margin: 20px 0;
+
+}#subject-input span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* ----- スケジュールのレイアウト ----- */
+
+#calendar {
+    background-color: #fafafa;
+    padding: 20px;
+    border-spacing: 0;
+    margin: 10px;
+    box-shadow: 2px 2px 4px #ddd;
+}
+
+#schedule .month {
+    margin: 10px;
+    display: flex;
+}
+
+#schedule .month h3 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+}
+#schedule .month select {
+    font-size: 20px;
+    font-weight: bold;
+    width: 60px;
+    height: 40px;
+    margin: auto 0;
+}
+
+#schedule table {
+    border-spacing: 0;
+    margin: 10px;
+}
+
+/* JS */
+#week td {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: top;
+    width: 90px;
+    height: 60px;
+    padding: 5px 20px 40px 20px;
+    border: 1px solid #ddd;
+}
+
+#week .date-td:hover {
+    background-color: #ff9;
+}
+
+#week .date-td.active {
+    background-color: #fc5;
+}
+
+#week .planBox-p {
+    font-size: 16px;
+    background-color: #ac8;
+    border-radius: 4px;
+    margin: 10px 0 0 0;
+}
+
+#plan-input {
+    margin: 30px 10px;
+}
+
+#plan-input input {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    display: block;
+}
+
+#plan-input p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+#plan-input span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* ----- お知らせのレイアウト ----- */
+
+#search-input {
+    margin: 0 10px 30px ;   
+}
+
+#search-input input {
+    font-size: 16px;
+    width: 300px;
+}
+
+#Announce table {
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 20px 10px 10px;
+    box-shadow: 2px 2px 4px #ddd;
+}
+
+#Announce th.date {
+    text-align: left;
+    width: 200px;
+    padding: 0 0 0 10px;
+    border: 1px solid #aaa;
+}
+
+#Announce th.source {
+    width: 400px;
+    text-align: left;
+    padding: 0 0 0 10px;
+    border: 1px solid #aaa;
+}
+
+#Announce th.content {
+    width: 400px;
+    text-align: left;
+    padding: 0 0 0 10px;
+    border: 1px solid #aaa;
+}
+
+#Announce td {
+    padding: 5px;
+}
+
+/* JS */
+#Announce .color-change td {
+    background-color: #eee;  
+}
+
+/* HTML */
+#Announce a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    background-color: #cea;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin: 20px;
+    position: relative;
+    left: 880px;
+}
+
+#Announce a:hover {
+    opacity: 0.6;
+}
+
+.footer {
+    background-color: #ddd;
+    height: 120px;
+    margin: 20px 0 0 0;
+}
